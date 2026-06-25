@@ -1,0 +1,88 @@
+## .NET / Visual Studio .gitignore
+
+# Build results
+bin/
+obj/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Build IDs / MSBuild
+*.tlog
+*.lastbuildstate
+*.unsuccessfulbuild
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Secrets and environment-specific config
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+*.pfx
+*.env
+.env
+.env.local
+secrets.json
+
+# User-specific Identity / JWT keys if ever generated to disk
+*.key
+*.pem
+
+# EF Core
+*.db
+*.db-shm
+*.db-wal
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.env.docker
+
+# Publish output
+publish/
+PublishProfiles/
