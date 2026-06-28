@@ -1,6 +1,7 @@
 using System.Text;
 using FreelanceFlow.API.Data;
 using FreelanceFlow.API.Models;
+using FreelanceFlow.API.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -51,6 +52,7 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 // Dev: permissive localhost origins for convenience. Prod: must come from config —
 // fail fast if it's not set, instead of silently blocking all cross-origin requests.
