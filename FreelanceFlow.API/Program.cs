@@ -53,6 +53,10 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IClientService, ClientService>();
+builder.Services.AddScoped<IProjectService, ProjectService>();
+builder.Services.AddScoped<ITaskService, TaskService>();
+builder.Services.AddScoped<INoteService, NoteService>();
 
 // Dev: permissive localhost origins for convenience. Prod: must come from config —
 // fail fast if it's not set, instead of silently blocking all cross-origin requests.

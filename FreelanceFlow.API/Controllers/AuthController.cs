@@ -2,7 +2,7 @@
 using FreelanceFlow.API.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FreelanceFlow.API.Controller
+namespace FreelanceFlow.API.Controllers
 {
     [ApiController]
     [Route("api/auth")]
